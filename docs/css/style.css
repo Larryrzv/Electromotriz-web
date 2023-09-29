@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
+
+
+a:link, a:visited, a:hover, a:active {
+    color: #f0f0d4;
+    text-decoration: none;
+}
+
+
+.main-Body {
+    background-color: #141625;
+    margin: 0;
+    font-family: Rubik;
+}
+
+.cabecera {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}#cabeceraTop {
+    overflow: inherit;
+    width: -webkit-fill-available;
+    background-color: #060f32;
+    height: 30px;
+    transition: 0.5s;
+}#cabeceraTop .iconos-Social-Header{
+    height: 100%;
+    float: right;
+}
+#cabeceraTopOuter{
+    height: 100%;
+    position: relative;
+}#cabeceraTopInner{
+    height: 100%;
+    width: -webkit-fill-available;
+    margin: 0 40px;
+    padding: 0 20px;
+}.iconos-Social-Header{
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}#iconosSocialHeaderInner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}.logos-Social-header {
+    width: 14px;
+    opacity: 0.8;
+}
+
+
+
+.cabecera-Mid{
+    width: -webkit-fill-available;
+    background-color: #252950de;
+}
+#cabeceraMidOuter{
+    position: relative;
+
+}
+#cabeceraMidInner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 50px;
+    padding-inline: 45px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}#logoCompleto{
+    padding: 8px 0;
+    transition: 0.5s;
+}#menu{
+    display: flex;
+    gap: 36px;
+    flex-direction: row;
+    font-size: 16px;
+}.nav-item-wrap{
+    display: inline-block;
+    vertical-align: middle;
+    color: aliceblue;
+}.nav-title{
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+}
+#sumario{
+    position: inherit;
+}#sumarioInner{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    list-style: none;
+}
+
+
+.backgroundimg {
+    display: flex; 
+}.backgroundimg img{
+    width: -webkit-fill-available;
+    height: 560px;
+}
+
+.Contenido{
+    position: inherit;
+}.Inicio{
+background-color: green;
+
+}.Acerca-De{
+    background-color: yellow;
+
+}.Contactar{
+    background-color: red;
+
+}
+
+
+.footer{
+    padding-top: 140px;
+    padding-bottom: 155px;
+}#footerInner{
+    padding-top: 140px;
+    padding-bottom: 155px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}#footerLogoWrap{
+    padding-top: 0;
+    text-align: center;
+
+}#footerLogo{
+    display: inline-block;
+    color: transparent;
+    height: auto;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.footer-Nav-Wrap{
+ width: auto;
+
+}.footer-Menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px gray;
+}.footer-Nav{
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+
+.social-Wrap-Footer{
+    width: auto;
+}.socialWrapinnerFooter{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 34px;
+
+}.logos-Social-Footer{
+    width: 38px;
+}
