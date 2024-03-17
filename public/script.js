@@ -1,15 +1,17 @@
 //Constantes Globales
 const cabeceraTop = document.getElementById("cabeceraTop")
-const iconosSocialWrap = document.getElementById("iconosSocialWrap")
 const mainBody = document.getElementById("mainBody")
 const cabeceraMid = document.getElementById("cabeceraMid")
 const logoCompleto = document.getElementById("logoCompleto")
 const footer = document.getElementById("footer")
 
+const anchoMaximoDelMapa = 1150
+
 //Variables Globales
 
 
 
+let anchoWindow = window.innerWidth
 
 //Funciones
 
@@ -53,7 +55,27 @@ function cabeceraTopHide () {
 
 
     iniciar () 
+}
 
+function redimensionarImagenes() {
+    let anchoPantalla = window.innerWidth;
+
+    // Selecciona todas las imágenes que deseas redimensionar
+    const imagenes = document.querySelectorAll('.imagenDinamica');
+    const tarjetaComunNinja = document.querySelectorAll(".tarjetaComunNinja")
+
+if (anchoPantalla > anchoMaximoDelMapa) {
+    anchoPantalla = anchoMaximoDelMapa - 450
+}
+    // Ajusta el tamaño de las imágenes según el ancho de la pantalla
+    imagenes.forEach((imagen) => {
+        // Por ejemplo, reduce el tamaño al 80% del ancho de la pantalla
+        imagen.style.width = `${anchoPantalla * 0.3}px`;
+    });
+    tarjetaComunNinja.forEach((tarjetaComunNinja) => {
+        // Por ejemplo, reduce el tamaño al 80% del ancho de la pantalla
+        tarjetaComunNinja.style.width = `${anchoPantalla * 0.3}px`;
+    });
 }
 
 

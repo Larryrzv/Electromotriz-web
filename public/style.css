@@ -3,13 +3,13 @@
 
 
 a:link, a:visited, a:hover, a:active {
-    color: #f0f0d4;
+    color: #ffffff;
     text-decoration: none;
 }
 
 
 .main-Body {
-    background-color: #141625;
+    background-color: rgb(9 12 29);
     margin: 0;
     font-family: Rubik;
 }
@@ -39,7 +39,16 @@ a:link, a:visited, a:hover, a:active {
     width: -webkit-fill-available;
     margin: 0 40px;
     padding: 0 20px;
-}.iconos-Social-Header{
+}#disclaimer{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    color: #ffffff30;
+    align-items: flex-end;
+    font-size: small;
+}
+.iconos-Social-Header{
     display: block;
     height: 100%;
     position: relative;
@@ -50,7 +59,7 @@ a:link, a:visited, a:hover, a:active {
     align-items: center;
     gap: 8px;
 }.logos-Social-header {
-    width: 14px;
+    width: 16px;
     opacity: 0.8;
 }
 
@@ -112,24 +121,29 @@ a:link, a:visited, a:hover, a:active {
 
 .Contenido{
     position: inherit;
-}.Inicio{
-background-color: green;
-
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}.textoTitle {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin: 0;
+}.textoContent {
+    color: rgb(230, 224, 216);
+    font-size: 18px;
+    line-height: 30px;
+}
+.Inicio{
+    margin-bottom: 18%;
 }.Acerca-De{
-    background-color: yellow;
-
-}.Contactar{
-    background-color: red;
-
+    margin-bottom: 18%;
 }
 
 
 .footer{
     padding-top: 140px;
-    padding-bottom: 155px;
 }#footerInner{
-    padding-top: 140px;
-    padding-bottom: 155px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -139,13 +153,6 @@ background-color: green;
     padding-top: 0;
     text-align: center;
 
-}#footerLogo{
-    display: inline-block;
-    color: transparent;
-    height: auto;
-    font-size: 0;
-    vertical-align: middle;
-    max-width: 100%;
 }
 .footer-Nav-Wrap{
  width: auto;
