@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&family=Tauri&display=swap");
 
 a:link,
 a:visited,
@@ -9,7 +10,7 @@ a:active {
 }
 
 .main-Body {
-  background-color: rgb(9 12 29);
+  background-color: #090c1d;
   margin: 0;
   font-family: Rubik;
 }
@@ -21,6 +22,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   width: -webkit-fill-available;
+  z-index: 4;
 }
 #cabeceraTop {
   overflow: inherit;
@@ -74,7 +76,7 @@ a:active {
   background-color: #252950de;
 }
 #cabeceraMidOuter {
-  position: relative;
+  position: sticky;
 }
 #cabeceraMidInner {
   display: flex;
@@ -117,6 +119,7 @@ a:active {
   flex-direction: row;
   gap: 44px;
   list-style: none;
+  font-size: 18px;
 }
 
 .backgroundimg {
@@ -124,58 +127,99 @@ a:active {
 }
 .backgroundimg img {
   width: -webkit-fill-available;
-  height: 598px;
+  height: 538px;
 }
 
 .TituloPrime {
   color: rgb(255, 255, 255);
   font-size: 60px;
   margin: 0;
+  text-align: center;
 }
 .Contenido {
   position: inherit;
-  padding-top: 4rem;
+  padding-top: 0rem;
   padding-bottom: 4rem;
   padding-left: 4rem;
   padding-right: 4rem;
 }
 .textoTitle {
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 54px;
   margin: 0;
 }
 .textoContent {
   color: rgb(230, 224, 216);
   font-size: 18px;
-  line-height: 30px;
+  line-height: 34px;
+  font-family: sans-serif;
+  margin-top: unset;
+  padding-inline-start: 34px;
 }
 .textoSubtitle {
   color: rgb(230, 224, 216);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
+  font-family: sans-serif;
 }
 .textoSubtitle0 {
   color: rgb(230, 224, 216);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
   margin-bottom: 18%;
+  font-family: sans-serif;
 }
 .Inicio {
-  margin-bottom: 25%;
-  padding-block-start: 58px;
+  margin-bottom: 14%;
+  padding-top: 58px;
 }
 .Acerca-De {
-  margin-bottom: 18%;
-  background: #535c91;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   padding-block-start: 58px;
+  --darkreader-bg--tw-bg-opacity: 1;
+  background-color: rgb(32 29 51 / 53%);
+  border-radius: 1rem;
+  margin-bottom: -15px;
+  position: sticky;
+}
+#id1 {
+  display: block;
+  width: auto;
+  z-index: 2;
+}
+#id2 {
+  display: block;
+  width: auto;
+  z-index: 1;
+}
+#introduccion {
+  text-align: center;
+}
+
+.Manejo-Con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 8%;
+  --darkreader-bg--tw-bg-opacity: 1;
+  background-color: rgba(16, 13, 32, 0.75);
+  border-radius: 1rem;
+}
+#fotoIA {
+  width: 32%;
 }
 .Contactar {
-  padding-block-start: 58px;
+  padding-block-start: 83px;
 }
 #divContentAcercaDe {
-  padding-inline-start: 24px;
+  padding-inline: 30px;
+  padding-top: 8%;
 }
 .puntosAcercaDe {
   color: rgb(230, 224, 216);
@@ -184,13 +228,27 @@ a:active {
 }
 
 .footer {
-  padding-top: 140px;
+  padding: 10px;
+  padding-inline: 48px;
 }
 #footerInner {
   display: flex;
+  padding: 30px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 30px;
+  background: rgb(9, 12, 29);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 12, 29, 1) 0%,
+    rgba(14, 140, 153, 1) 7%,
+    rgba(17, 220, 230, 0.8854713760504201) 13%,
+    rgba(32, 174, 209, 0.9134825805322129) 43%,
+    rgba(21, 117, 153, 1) 55%,
+    rgba(11, 66, 103, 0.8882724964985994) 64%,
+    rgba(9, 12, 29, 1) 73%
+  );
 }
 #footerLogoWrap {
   padding-top: 0;
@@ -210,6 +268,7 @@ a:active {
   display: flex;
   gap: 36px;
   list-style: none;
+  font-size: 24px;
 }
 
 .social-Wrap-Footer {
@@ -226,5 +285,30 @@ a:active {
   padding: 0;
 }
 .logos-Social-Footer {
-  width: 38px;
+  width: 54px;
+}
+
+@media (width < 1000px) {
+  .Inicio {
+    padding-top: 84px;
+  }
+  .backgroundimg img {
+    height: 744px;
+  }
+  #sumarioInner {
+    font-size: 24px;
+  }
+  .Acerca-De {
+    flex-direction: column;
+    padding-block-start: 78px;
+  }
+  .Manejo-Con {
+    flex-direction: column-reverse;
+  }
+  .textoContent {
+    font-size: 14px;
+  }
+  .Contactar {
+    padding-block-start: 184px;
+  }
 }
