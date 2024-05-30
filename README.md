@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/Larryrzv/Electromotriz-web">
-    <img src="./public/resources/readme.png" /> 
+    <img src="./public/img/readme.webp" /> 
     </a>
   <h2>
     Pagina de ejemplo de Tecnico Electromotriz
